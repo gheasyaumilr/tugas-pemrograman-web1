@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paket Langganan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f9fb;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1, h3 {
+      text-align: center;
+      color: #0E5A71;
+      margin-top: 30px;
+    }
+
+    .paragraf1, .paragraf2 {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 15px 20px;
+      border-radius: 5px;
+      line-height: 1.6;
+    }
+
+    .paragraf1 {
+      background-color: #e0f7fa;
+      border-left: 6px solid #00796b;
+      color: #004d40;
+    }
+
+    .paragraf2 {
+      background-color: #fff3e0;
+      border-left: 6px solid #ef6c00;
+      color: #e65100;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 40%;
+      border-radius: 8px;
+    }
+
+    ul {
+      max-width: 600px;
+      margin: 20px auto;
+      padding-left: 20px;
+      font-size: 16px;
+    }
+
+    .pricing-table {
+      width: 100%;
+      max-width: 900px;
+      margin: 30px auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .pricing-table thead {
+      background-color: #f0f0f0;
+    }
+
+    .pricing-table th, .pricing-table td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+    }
+
+    .pricing-table th {
+      font-size: 18px;
+    }
+
+    .pricing-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .pricing-table button {
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-start {
+      background-color: #00BCD4;
+      color: white;
+    }
+
+    .btn-start:hover {
+      background-color: #0097a7;
+    }
+
+    .btn-pro {
+      background-color: #607D8B;
+      color: white;
+    }
+
+    .btn-pro:hover {
+      background-color: #455A64;
+    }
+
+    .btn-ultimate {
+      background-color: #FF5722;
+      color: white;
+    }
+
+    .btn-ultimate:hover {
+      background-color: #e64a19;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-table, .pricing-table thead, .pricing-table tbody, .pricing-table th, .pricing-table td, .pricing-table tr {
+        display: block;
+        width: 100%;
+      }
+
+      .pricing-table thead {
+        display: none;
+      }
+
+      .pricing-table tr {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: white;
+      }
+
+      .pricing-table td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+        border-bottom: none;
+      }
+
+      .pricing-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pilih Paket Langganan Anda</h1>
+
+  <div class="paragraf1">
+    Nikmati akses penuh ke seluruh modul pembelajaran dan fitur eksklusif yang tersedia dalam setiap paket langganan kami. Cocok untuk pelajar maupun profesional!
+  </div>
+
+  <div class="paragraf2">
+    Butuh bantuan memilih paket? Hubungi <a href="mailto:support@layanan.com">support@layanan.com</a> atau kunjungi <a href="https://layanan.com" target="_blank">layanan.com</a> untuk informasi lebih lanjut.
+  </div>
+
+  <h3>Ilustrasi Paket:</h3>
+  <img src="image.png" alt="Ilustrasi Paket">
+
+  <h3>Fitur yang Tersedia:</h3>
+  <ul>
+    <li>Akses penuh ke semua modul</li>
+    <li>Dukungan 24/7</li>
+    <li>Gratis update selamanya</li>
+  </ul>
+
+  <h3>Tabel Harga:</h3>
+  <table class="pricing-table">
+    <thead>
+      <tr>
+        <th>START</th>
+        <th>PRO</th>
+        <th>ULTIMATE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="START">$15.99/mo</td>
+        <td data-label="PRO">$25.99/mo</td>
+        <td data-label="ULTIMATE">$35.99/mo</td>
+      </tr>
+      <tr>
+        <td data-label="START">✔️</td>
+        <td data-label="PRO">✔️</td>
+        <td data-label="ULTIMATE">✔️</td>
+      </tr>
+      <tr>
+        <td data-label="START">❌</td>
+        <td data-label="PRO">✔️</td>
+        <td data-label="ULTIMATE">✔️</td>
+      </tr>
+      <tr>
+        <td data-label="START">❌</td>
+        <td data-label="PRO">✔️</td>
+        <td data-label="ULTIMATE">✔️</td>
+      </tr>
+      <tr>
+        <td data-label="START">❌</td>
+        <td data-label="PRO">❌</td>
+        <td data-label="ULTIMATE">✔️</td>
+      </tr>
+      <tr>
+        <td data-label="START"><button class="btn-start">SIGN-UP</button></td>
+        <td data-label="PRO"><button class="btn-pro">SIGN-UP</button></td>
+        <td data-label="ULTIMATE"><button class="btn-ultimate">SIGN-UP</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
